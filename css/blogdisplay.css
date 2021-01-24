@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	padding:0;
+}
+.imagepart{
+	height:30%;
+	width:100%;
+	align-items:center;
+}
+.blogtitles{
+	height:10%;
+	width:100%;
+	align-items:center;
+}
+.blogtext{
+	width:70%;
+	height:50%
+	align-items: center;
+}

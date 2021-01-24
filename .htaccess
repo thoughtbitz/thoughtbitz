@@ -1,0 +1,19 @@
+ErrorDocument 400 https://www.thoughtbitz.ml/400page.html
+ErrorDocument 401 https://www.thoughtbitz.ml/401page.html
+ErrorDocument 403 https://www.thoughtbitz.ml/403page.html
+ErrorDocument 404 https://www.thoughtbitz.ml/404page.html
+ErrorDocument 503 https://www.thoughtbitz.ml/503page.html
+
+RewriteCond %{QUERY_STRING} ^(.*)i=[^&]+(.*)$ [NC]
+RewriteRule ^(.*)$ /$1?%1%2 [R=301,L]
+RewriteEngine On
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^action?id=$ https://www.thoughtbitz.ml/loginwork/action.php?id=$1
+RewriteRule ^dashboard?userid=$ ./dashboard.php?userid=$1
+RewriteRule ^/?user/(.*?)/?$ /user.php?user=$1 [L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /users\.php\?user=([^\&\ ]+)
+RewriteRule ^/?users\.php$ /users/%1? [L,R=301]
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

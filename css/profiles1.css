@@ -1,0 +1,144 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+  background: #8FBC8F;
+ overflow-x:hidden;
+height:auto;
+background-size:cover;
+  font-family: "poppins" , sans-serif;
+  
+}
+.profile-header{
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrvKEhpz4Du75gHor9FQqASb7EFX4bg2cy7Q&usqp=CAU');
+  width: 100%;
+  background-repeat:no-repeat;
+  display: flex;
+  height:45%;
+  background-size:cover;
+  box-shadow:0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.profile-image{
+  float: left;
+  width: 340px;
+  height: 200px;
+
+}
+img{
+  border-radius: 50%;
+  height:230px;
+  width:230px;
+  border:2px groove #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left:50px;
+  top: 20px;
+  z-index: 5px;
+  background: #fff;
+}
+.profile-info{
+  float: left;
+  flex-direction: column;
+  justify-content: center;
+  /*padding: 30px;*/
+
+}
+.profile-info h3{
+
+  font-variant: small-caps;
+  font-size: 38px;
+  margin-top:4rem;
+  margin-left:2rem;
+  font-family: 'Galada', cursive;
+  font-weight: bold;
+}
+.profile-info .address{
+
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  margin-top:1rem; 
+  font-weight: lighter;
+  margin-left:1rem;
+  color:#3d3d29;
+}
+.main-bd{
+  display: flex;
+  width : 100%;
+  padding-right:1rem;
+}
+.profile-side{
+  width:30vw;
+  background: #bc2d29;
+  height:auto;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.9);
+  padding: 90px 30px 20px;
+  /*margin-left: 10px;
+  margin-bottom: 10px;
+*/}
+.profile-side p{
+  margin-bottom: 70px;
+  font-size: 14px;
+}
+.right-side{
+
+  float: top;
+
+  width:70%;
+}
+.nav{
+  width:auto;
+  background-size: cover;
+  z-index: -1;
+}
+.nav ul{
+  display:flex;
+  justify-content:left;
+  list-style-type: none;
+  height:2.5rem;
+  width: 100%;
+  background-size: cover;
+  padding-right: 0rem;
+  font-family: 'Poppins', sans-serif;
+  background: #ffff99;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.user-post:hover{
+/* transform: rotate(45deg);*/
+  transition-delay: .1s;
+
+  transform: scale(1.1);
+  color:  #096a77;
+}
+.user-setting:hover{
+/* transform: rotate(45deg);*/
+  transition-delay: .1s;
+
+  transform: scale(1.1);
+  color:  #096a77;
+}
+.nav ul li{
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+.nav ul li.active,
+.nav ul li:hover
+{
+  inset;
+}
+.profile-body h1{
+   /*s*/
+}
+.profile-body .profile-post{
+  font-family: 'Poppins', sans-serif;
+}
+
+.fa fa-bell-o{
+  display: ""
+}
+.fa fa-bell{
+  display: none;
+}

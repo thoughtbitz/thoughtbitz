@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- Primary Meta Tags -->
+<title>ThoughtBitz</title>
+<meta name="title" content="ThoughtBitz">
+<meta name="description" content="Aimed to provide the comon platform">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.thoughtbitz.ml/">
+<meta property="og:title" content="ThoughtBitz">
+<meta property="og:description" content="Aimed to provide the common platform">
+<meta property="og:image" itemprop="image" content="https://www.thoughtbitz.ml/img/favicons.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.thoughtbitz.ml/">
+<meta property="twitter:title" content="ThoughtBitz">
+<meta property="twitter:description" content="Aimed to provide the common platform">
+<meta property="twitter:image" content="https://www.thoughtbitz.ml/img/favicons.png">
+     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" href="./img/icon-official-favicon-thoughtBitz-459832xzc.png" type="image/x-icon">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/line.css">
+		<!-- Favicon -->
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166755704-1"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<style>
+            ::-webkit-scrollbar {
+                width: 20px;
+                
+            }
+            ::-webkit-scrollbar-track {
+                background: #b3d9ff;
+                
+            }
+            ::-webkit-scrollbar-thumb {
+                background: transparent;
+                border-radius:20px;
+              
+               
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #0059b3;
+            }
+			.loader {
+                    border: 3px solid #f3f3f3;
+                    border-radius: 50%;
+                    border-top: 3px solid  #003366;
+                    border-bottom: 3px solid  #003366;
+                    width: 50px;
+                    height: 50px;
+                    -webkit-animation: spin 2s linear infinite; 
+                    animation: spin 2s linear infinite;
+                    text-align: center;
+                    margin-left: 48%;
+                    padding: 3px;
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+                    margin-top:20%;
+	        }
+            .cfgh{
+                    -webkit-animation: spinx 1s linear infinite;  
+                    animation: spinx 1s linear infinite;
+                    width:45px;
+                    height: 45px;
+
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+            }
+
+            @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+
+            @-webkit-keyframes spinx {
+            0% { -webkit-transform: rotate(360deg); }
+            100% { -webkit-transform: rotate(0deg); }
+            }
+
+            @keyframes spinx {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+            }
+                    :root{
+                    --loader-width: 70px;
+                    --loader-height: 70px;
+                    --loader-color-primary: #27ae60;
+                    --loader-color-secondary: #eee;
+                    --line-width: 3px;
+                    --animation-duration: 2s;
+                    --loader-initial-scale: 0.1;
+                }
+        .seg{
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI6s8pEVKfm9eS3TEpbASzmLbcKZO54NEMpw&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:#fff;
+            text-align: center;
+            width:100vw;
+            height:30%;
+            padding-bottom:10em;
+            padding-top:10em
+        }
+                
+		.logo{
+			border-radius:50%;
+			height:60px;
+			margin-bottom:1rem;
+			box-shadow:0 0 10px rgba(0,0,0,0.4);
+		}
+		.navbar-brand{
+			display:flex;
+			justify-content:space-around;
+		}
+		.logo-mark{
+			color:black;
+			font-family: 'Lobster', cursive;
+			padding:2.4rem 1rem;
+			font-size:2.5rem;
+		}
+        body{
+            //background-color:#f2efec;
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh2hHRzIaTfOsxjlbJ3rTBhHQemR0g77iDnQ&usqp=CAU");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .social-icons{
+    
+    margin: 0;
+    padding: 0;
+    font-size : 10px;
+}
+
+.social {
+    margin:7px 7px 7px 0px;
+    
+}
+
+
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .25s;
+     transform:scale(1.5);
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .25s;
+     transform:scale(1.5);
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .25s;
+     transform:scale(1.5);
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .25s;
+     transform:scale(1.5);
+ }
+ #slideshow {
+	margin: 0 auto;
+	padding-top: 50px;
+	height:360px;
+
+	padding-bottom:5rem;
+	width: 100vw;
+	margin-bottom:2rem;
+	overflow-x:hidden;
+	/*background-color:white;*/
+    background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh2hHRzIaTfOsxjlbJ3rTBhHQemR0g77iDnQ&usqp=CAU");
+            background-size:cover;
+            background-repeat:no-repeat;
+	box-sizing: border-box;
+}
+ 
+		</style>
+         <style>
+                #box{
+                    width:1%;
+                    height:4px;
+                    background:#b35900;
+                    transition:all 0.25s;
+                    border-radius:20px;
+                }
+                footer{
+                     background:#e6ffee;
+                }
+                footer .container{
+                    height:20rem;
+                   // margin-top:100px;
+                    font-size:32px;
+                   
+                }
+                footer .container a{
+                    font-size:2rem;
+                    color:black;
+                }
+                footer .container p{
+                    font-size:1.5rem;
+                    color:black;
+                }
+                .mon1{
+                    font-size:6rem;
+                }
+                .mon{
+                    font-size:10rem;
+                }
+                .monilb{
+                    font-size:5rem;
+                    //color:#243196;
+                }
+                .mob{
+                    font-font-size:1.5rem;
+                    color:red;
+                }
+                @media only screen and (max-width : 900px){
+                     
+                    footer .container{
+        
+                        font-size:20px;
+                    
+                    }
+                    footer .container a{
+                        font-size:12px;
+                        color:black;
+                    }
+                    footer .container p{
+                        font-size:10px;
+                        color:black;
+                    }
+                    .mon,.mon1{
+                        font-size:4rem;
+                    }
+                    .monilb{
+                        font-size:4rem;
+                    }
+
+                }
+            </style>
+	</head>
+	
+	<body>
+		
+		<div class="loader">	
+		<!--<img src="img/icon-official-favicon-thoughtBitz-459832xzc.png" class="cfgh">-->
+		</div> 
+			<!-- header -->
+			<header id="top-section">
+				
+				<nav class="navbar navbar-default bg-light" role="navigation" style="color:black">
+					<div class="container">
+						
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border-color:black">
+								<span class="sr-only">Toggle navigation</span>
+							
+								
+								      <span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x" style="font-size:1.5rem;width:30px"></i></span>
+							</button>
+							<a class="navbar-brand" href="#"><div><img class="logo img-fluid" src="./img/icon-official-favicon-thoughtBitz-459832xzc.png" alt="Logo" /></div>
+								<div class="text-dark logo-mark">ThoughtBitz</div>
+							</a>
+
+						</div>
+						<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right navbar-light">
+								<li ><a href="./loginwork/signup" style="color:black;font-family: 'Lobster', cursive;font-size:3rem;background:transparent;">Signup</a></li>
+								<li><a href="./loginwork/Thoughtbitz-login" style="color:black;font-family: 'Lobster', cursive;font-size:3rem;background:transparent;">Login</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black;font-family: 'Lobster', cursive;font-size:3rem;background:transparent;">Menu <span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu" style="color:black;font-family: 'Lobster', cursive;">
+										<li style="font-size:2rem;background:transparent;"><a href="/about/about_us">About Us</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+                    <div id="box">
+                       
+                    </div>
+				</nav>
+				
+			</header>
+				<div class="seg">
+							
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome To","ThoughtBitz"]' style="font-size:5rem;font-weight:bolder">
+                            <span class="wrap"></span>
+                        </a>
+
+				</div>
+				<script>
+				var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right:0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+			<style type="text/css">
+            </style>
+        <div class="row">
+            
+            <div class="col-sm-8">
+                <section id="slideshow" >
+                    <div class="entire-content" >
+                        <div class="content-carrousel" >
+                            <figure class="shadow"><img src="categories//1.png"></figure>
+                            <figure class="shadow"><img src="categories//2.png"></figure>
+                            <figure class="shadow"><img src="categories//3.png"></figure>
+                            <figure class="shadow"><img src="categories//4.png"></figure>
+                            <figure class="shadow"><img src="categories//5.png"></figure>
+                            <figure class="shadow"><img src="categories//6.png"></figure>
+                            <figure class="shadow"><img src="categories//7.png"></figure>
+                            <figure class="shadow"><img src="categories//8.png"></figure>
+                            <figure class="shadow"><img src="categories//9.png"></figure>
+                            <figure class="shadow"><img src="categories//10.png"></figure>
+                            <figure class="shadow"><img src="categories//11.png"></figure>
+                            <figure class="shadow"><img src="categories//12.png"></figure>
+                            <figure class="shadow"><img src="categories//13.png"></figure>
+                            <figure class="shadow"><img src="categories//14.png"></figure>
+                        </div>
+                    </div>
+                </section>
+            </div>
+           
+        </div>    
+			   <div class="container">
+                   <div class="card rounded mx-auto" style="width:100%;background:white;border:2px solid black;border-radius:16px;">
+                                <div class="row">
+                                    <div class="col-sm-6 text-center" >
+                                            <img src="https://freevector-images.s3.amazonaws.com/uploads/vector/preview/40296/large_1x_WORKING_AT_LIVING_ROOM.jpg" class="card-img text-center" height="70%" width="70%" style="border-radius:16px;">
+                                    </div>
+                                    <div class="col-sm-6 bg-light text-center" style="height:100%">
+                                        <div class="card-body">
+                                          <a href="dashboard">  <h1 class="card-title text-dark text-center mon1" style="color:#CEC92A;text-shadow: 2px 2px  blue;font-family: 'Josefin Sans', sans-serif;">Main Dashboard</h1></a>
+                                        </div>
+                                    </div>
+                                </div> 
+                    </div>
+                </div>
+                    <div class="row" style="padding:5rem;">
+
+                            <h1 class="mon text-center" style="color: #0077b3;text-shadow:#2eb82e 2px 2px  ;font-family: 'Teko', sans-serif;">Blogging On Tb</h1>
+                            
+                    </div>
+                    <div class="row" style="padding-top:5rem;">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8 mx-auto">
+                            <div class="card rounded mx-auto" style="width:100%;box-shadow:0 0 10px rgba(0,0,0,0.4);border:2px solid black;border-radius:16px;background:white">
+                                <div class="row no-gutters text-center">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5 text-center">
+                                        <img class="card-img" src="https://image.freepik.com/free-vector/blogging-illustration-concept_114360-851.jpg" alt="blogs" height="300" width="300">
+                                    </div>
+                                    <div class="col-sm-5 bg-light text-center mx-auto">
+                                        <div class="card-body text-center mx-auto">
+                                        <h3 class="mob card-title text-center" style="font-family: 'Josefin Sans', sans-serif;">Blogging On ThoughtBitz</h3>
+                                    
+                                        <a href="/Blogs/blogpage" class="btn  card-text text-center" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P6vumxpsuc8W5uYTI9cXQBHD-2OKgAYguA&usqp=CAU" class="text-center mx-auto" height="65" width="170"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="row" style="padding:5rem">
+
+                            <h1 class="mon text-center" style="color: #ff8000;text-shadow: 2px 2px  blue;font-family: 'Teko', sans-serif;">Online Courses</h1>
+                            
+                    </div>
+                    <div class="row justify-content-between" style="justify-content:space-around;" >
+                        <div class="col-md-8">
+                             <div class="lala card rounded mx-auto" style="box-shadow:0 0 10px rgba(0,0,0,0.4);border:2px solid black;border-radius:12px;background:white;padding-top:3rem;margin-top:2rem">
+                                <div class="row">
+                                    
+                                    <div class="col-md-6 mx-auto text-center">
+                                        <img class="card-img" src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="blogs" height="258" width="258">
+                                    </div>
+                                    <div class="col-md-6 bg-light mx-auto text-center">
+                                        <div class="card-body">
+                                        <h3 class="monilb card-title text-center" style="font-family: 'Josefin Sans', sans-serif;color:#243196;text-shadow:0px 2px 2px rgba(0,0,0,0.8);">C programming</h3>
+                                    
+                                        <a href="/Blogs/blogpage" class="btn text-center card-text"><img src="https://pngimage.net/wp-content/uploads/2019/05/enroll-now-button-png-.png" height="65" width="170"></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="lala card rounded mx-auto pl-1" style="box-shadow:0 0 10px rgba(0,0,0,0.4);border:2px solid black;border-radius:12px;background:white;padding-top:3rem;margin-top:2rem">
+                                <div class="row text-center">
+                                    <div class="col-md-6 text-center mx-auto">
+                                        <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_n08xRSb_t7hRRhsEujN4Xbn0ctYfBUZ-qg&usqp=CAU" alt="blogs" height="258" width="100%">
+                                    </div>
+                                    <div class="col-md-6 bg-light text-center">
+                                        <div class="card-body">
+                                        <h3 class="monilb card-title text-center " style="font-family: 'Josefin Sans', sans-serif;color:#CC161B;text-shadow:2px 2px rgba(0,0,0,0.8)">Java</h3>
+                                    <a href="/Blogs/blogpage" class="btn text-center card-text"><img class="btn text-center card-text" src="https://pngimage.net/wp-content/uploads/2019/05/enroll-now-button-png-.png" height="80" width="200"></a>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://www.falcon.io/wp-content/uploads/2018/10/social-media-strategist-job-title-min.gif" width="100%">
+                            <br>                                                   
+                            <img src="https://chstalon.com/wp-content/uploads/2020/11/5f704ed32430520b141ba842_online-school.gif" width="100%" style="margin-top:3rem">
+                        </div>
+                    </div>
+                </div>
+            <!--<style>
+                footer:hover{
+                    background-color:#994d00;
+                    color:black;
+                    cursor:pointer;
+                }
+             footer:hover p{
+                    color:black;
+                }
+                footer:hover p a{
+                    color:black;
+                    transform:scale(1.5);
+                }
+                footer:hover p a:hover{
+                    transform:scale(1.5);
+                    color:green;
+                }
+            </style>-->
+
+            <div class="container-fluid" style="background:transparent;margin-top:2rem;" >
+                <div class="row text-center p-5" style="justify-content:space-around;">
+                    <div class="col-sm-3 p-5" style="padding:2rem;">
+                        <img class="img-thumbnail m-2" src="https://www.mycaptain.in/assets/static/feature-1.5d391c6.80016ef32d04002f582d4d913aa8c2f3.png">
+                        <div class="h2">Like and share</div>
+                        
+                            
+                       <p style="font-size:1.5rem;font-family: 'Lato', sans-serif;font-weight:bold;" align="center">
+                           
+                           you can share your blog  <br>and your profile,
+                           you can make change <br> in your profile and <br>share other 
+                           blog to common platform.
+                           
+                           
+                      </p>
+                          
+                       
+                    </div>
+                    <div class="col-sm-3 p-5" style="padding:2rem;">
+                         <img class="img-thumbnail m-2" src="https://www.mycaptain.in/assets/static/feature-2.5cb2611.f627384aae16ede8cae551c5e3a494b0.png">
+                                        <div class="h2">Write Your Thought</div>
+                        
+                            
+                       <p style="font-size:1.5rem;font-family: 'Lato', sans-serif;font-weight:bold;" align="center">
+                           We provide common platform for Blogging <br>and you can Write
+                           about any topic<br> you like or you can share <br>, like other blog 
+                           and find new thought.
+                      </p>
+                          
+                    </div>
+                    <div class="col-sm-3 p-5" style="padding:2rem;">
+                         <img class="img-thumbnail m-2" src="https://www.mycaptain.in/assets/static/feature-3.5cb2611.7d49f12f19de8aad856547bd20ecb450.png">
+                                        <div class="h2">Find Your Course</div>
+                        
+                            
+                       <p style="font-size:1.5rem;font-family: 'Lato', sans-serif;font-weight:bold;" align="center">
+                            We provide common platform for Learing <br>and you can learn 
+                           about many course<br> by enroll them also <br>you can certified 
+                           after complete the course.
+                          
+                    </div>
+                    <div class="col-sm-3 p-5" style="padding:2rem;">
+                         <img class="img-thumbnail m-2" src="https://www.mycaptain.in/assets/static/feature-4.5cb2611.a2bd18adc43615946a4a3121adf2ca94.png">
+                                        <div class="h2">Quiz</div>
+                        
+                            
+                       <p style="font-size:1.5rem;font-family: 'Lato', sans-serif;font-weight:bold;" align="center">
+                        We provide common platform for Quiz<br>and you can take part
+                           in the quiz for test your<br>skill and also get certified<br>
+                      </p>
+                          
+                    </div>
+                
+                </div>
+            </div>
+			<footer>
+				<div class="container">
+					<p style="font-size:1.5rem;font-family: 'Lato', sans-serif;font-weight:bold;" align="center"><a href="#">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a><a href="#work">works&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="#teammember">Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="#contact">Contact</a></p><br>
+					<div class="social-icons text-center"> 
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        </div>	<br>
+					<p class="copy-right">Copyright&nbsp;&nbsp;&nbsp; &copy;2020&nbsp;&nbsp;&nbsp; <a href="#">ThoughtBitz&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>  All rights reserved. </p>
+				</div>
+			</footer>
+
+		<script> 
+		document.onreadystatechange = function() { 
+			if (document.readyState !== "complete") { 
+				document.querySelector( 
+				"body").style.visibility = "hidden"; 
+				document.querySelector( 
+				".loader").style.visibility = "visible"; 
+			} else { 
+				document.querySelector( 
+				".loader").style.display= "none"; 
+				document.querySelector( 
+				"body").style.visibility = "visible"; 
+			} 
+		}; 
+	</script> 
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+	</body>	
+    <script>
+        window.addEventListener('scroll',()=>{
+           /* if(Math.floor(((window.innerHeight+window.scrollY)*100)/document.documentElement.scrollHeight)<=3){
+                document.getElementById("box").style.width=0+"%";
+            }
+            else if(Math.floor((window.scrollY*100)/document.documentElement.scrollHeight)<=30&&Math.floor((window.scrollY*100)/document.documentElement.scrollHeight)>3){
+                document.getElementById("box").style.width=Math.floor((window.scrollY*100)/document.documentElement.scrollHeight+8)+"%";
+            }
+            else{
+                 document.getElementById("box").style.width=Math.floor((window.scrollY*100)/document.documentElement.scrollHeight+30)+"%";
+            }
+           
+            console.log(Math.floor((window.scrollY*100)/document.documentElement.scrollHeight+3));*/
+            //console.log(window.innerHeight);
+            
+            if(window.innerHeight+window.scrollY<=document.documentElement.scrollHeight/2){
+                document.getElementById("box").style.width=Math.floor(((window.scrollY)*100)/document.documentElement.scrollHeight)+"%";
+            }
+        
+            else{
+                 document.getElementById("box").style.width=Math.floor(((window.innerHeight+window.scrollY)*100)/document.documentElement.scrollHeight)+"%";
+            }
+           /*  console.log(Math.floor(((window.innerHeight+window.scrollY)*100)/document.documentElement.scrollHeight));
+            document.getElementById("box").style.width=Math.floor(((window.scrollY)*100)/document.documentElement.scrollHeight)+"%";*/
+		    console.log(document.documentElement.scrollHeight);
+
+	    });
+    </script>
+    
+
+</html>

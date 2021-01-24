@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+}
+.firstdiv{
+	width:100vw;
+	display:flex;
+	margin-left:2rem;
+	justify-content:space-between;
+}
+.part1{
+	display:flex;
+	justify-content:space-around;
+}
+.firstdiv img{
+	border-radius:30%;
+	height:100px;
+}
+.seconddiv{
+	height:30%;
+	width:100vw;
+	text-align:center;
+}
+.seconddiv .svgpart{
+	height:80vh;
+	width:70vw;
+	margin-left:15%;
+}
+.buttons button{
+	height:1.5rem;
+}
+.buttons{
+	display:flex;
+	justify-content:space-around;
+}
+.thirddiv{
+	text-align:center;
+}
+.fourthdiv{
+	text-align:center;
+}
+.fifthdiv{
+	text-align:center;
+}
+.sixdiv{
+	text-align:center;
+}
+.seventhdiv{
+	text-align:center;
+}
+.eightdiv{
+	text-align:center;
+}
+#Group{
+	animation:movement 5s ;
+}
+#firstform{
+	animation:movements 5s;
+}
+@keyframes movement{
+	0%{
+	transform:skewY(30deg);
+	}
+
+	100%{
+		transform:skewY(0deg);
+	}
+
+}
+@keyframes movements{
+	0%{
+	transform:skewX(60deg);
+	}
+	100%{
+		transform:skewX(0deg);
+	}
+
+}
+@keyframes movementss{
+	0%{
+		transform:translate(10rem,5rem);
+	}
+	50%{
+		transform:translate(5rem,2.5rem);
+	}
+	100%{
+		transform:translate(0rem,0rem);
+	}
+}
+#thirdform{
+	animation:movements 5s ;
+}
+#man{
+	animation:man 5s ;
+}
+@keyframes man11{
+	0%{
+		transform:translate(-10rem,0rem);
+	}
+	50%{
+		transform:translate(13rem,0rem);
+	}
+	100%{
+		transform:translate(0rem,0rem);
+	}
+}
+@keyframes man{
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
