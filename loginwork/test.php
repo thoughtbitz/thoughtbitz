@@ -170,7 +170,7 @@ function clickEvent(first,last){
 						$passwords=$a['password'];
 						$validateuser=$a['username'];
 						if($dfg==$generatedotp){
-							if($getmail=="deepshah1309@gmail.com" ||$getmail=="jasanidarsh3@gmail.com" ||$getmail=="monilnbakshi@gmail.com"||$getmail=="hetvishukla2001@gmail.com"){
+							if($getmail==""){
 								$qy="insert into user(username,email,password,emailverified,login_activity,is_admin)values('$validateuser','$getmail','$passwords',1,1,1) ";
                                 $_SESSION["id"]=false;
 								$result=mysqli_query($con,$qy);
